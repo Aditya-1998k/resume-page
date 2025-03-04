@@ -1,51 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Software Developer | 2+ Years Experience</p>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Software Developer with 2+ years of experience at Zeomega Infotech Pvt Ltd. Proficient in frontend, backend, databases, cloud, and DevOps technologies.</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <p><strong>Zeomega Infotech Pvt Ltd</strong> - Software Developer (2+ Years)</p>
-        <ul>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Responsive Resume Website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Your Name</title>
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      <link rel="icon" href="dist/favicon.ico">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                },
+              },
+            },
+          },
+        }
+      </script>
+   </head>
+   <body class="bg-primary-50 text-primary-900">
+      <header class="bg-primary-700 text-white py-6 text-center">
+         <h1 class="text-3xl font-bold">Your Name</h1>
+         <p>Software Developer | 2+ Years Experience</p>
+      </header>
+      <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+         <h2 class="text-xl font-semibold mb-4">About Me</h2>
+         <p>Software Developer with 2+ years of experience at Zeomega Infotech Pvt Ltd. Proficient in frontend, backend, databases, cloud, and DevOps technologies.</p>
+      </section>
+      <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+         <h2 class="text-xl font-semibold mb-4">Experience</h2>
+         <p><strong>Zeomega Infotech Pvt Ltd</strong> - Software Developer (2+ Years)</p>
+         <ul class="list-disc list-inside">
             <li>Developed frontend applications using React and JavaScript.</li>
             <li>Built and maintained backend services using Python, Flask, and Node.js.</li>
             <li>Worked with SQL Server and MongoDB for data storage solutions.</li>
             <li>Integrated DevOps tools like Docker, Kubernetes, Jenkins, and Git.</li>
             <li>Deployed and managed applications on AWS cloud infrastructure.</li>
-        </ul>
-    </section>
-    
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
+         </ul>
+      </section>
+      <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6">
+         <h2 class="text-xl font-semibold mb-4">Technical Skills</h2>
+         <ul class="list-disc list-inside">
             <li><strong>Frontend:</strong> React, JavaScript</li>
             <li><strong>Backend:</strong> Python, Node.js, Flask</li>
             <li><strong>Databases:</strong> MongoDB, SQL Server</li>
             <li><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, Git</li>
             <li><strong>Operating Systems:</strong> Linux</li>
             <li><strong>Cloud:</strong> AWS</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-    </section>
-</body>
+         </ul>
+      </section>
+      <section class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-6 mb-6">
+         <h2 class="text-xl font-semibold mb-4">Contact</h2>
+         <p>Email: your.email@example.com</p>
+         <p>GitHub: <a href="https://github.com/your-username" class="text-primary-600" target="_blank">github.com/your-username</a></p>
+         <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" class="text-primary-600" target="_blank">linkedin.com/in/your-profile</a></p>
+      </section>
+   </body>
 </html>
