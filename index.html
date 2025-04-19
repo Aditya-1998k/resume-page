@@ -4,137 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aditya Gupta | Resume</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Fira Code', monospace;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 p-6">
-
-  <!-- Header -->
-  <header class="text-center mb-10">
-    <h1 class="text-4xl font-bold text-gray-900">Aditya Gupta</h1>
-    <p class="mt-2 text-md text-gray-600">Software Developer | Backend Engineer | ML Enthusiast</p>
-    <div class="mt-3 space-x-4 text-sm text-blue-600">
+<body>
+  <header class="header">
+    <h1>Aditya Gupta</h1>
+    <p>
       <a href="mailto:aditya98gupta@gmail.com">aditya98gupta@gmail.com</a> |
       <a href="tel:+919643652605">+91-96436-52605</a> |
       <a href="https://linkedin.com/in/aditya-gupta1998" target="_blank">LinkedIn</a> |
       <a href="https://github.com/Aditya-1998k" target="_blank">GitHub</a>
-    </div>
+    </p>
   </header>
 
-  <!-- Fun Fact Typing Animation -->
-  <section class="text-center mb-10">
-    <span class="text-xl font-semibold text-purple-700">⚡ Fun Fact:</span>
-    <h2 class="text-lg mt-2 h-10" id="funfact"></h2>
+  <section class="summary">
+    <h2>Summary</h2>
+    <p>Results-driven Software Developer with 2+ years of experience building backend systems, REST APIs, and working with Python, Flask, SQL, and DevOps. Skilled in microservices, database optimization, and frontend tech (React.js). Passionate about Machine Learning and scalable applications.</p>
   </section>
 
-  <!-- Summary -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Summary</h2>
-    <p>
-      Results-driven Software Developer with 2+ years of experience building scalable backend systems and RESTful APIs. 
-      Proficient in Python, Flask, SQL, and DevOps tools (Docker, Jenkins). Skilled in microservices, database optimization, 
-      testing, and frontend technologies. Passionate about Machine Learning and data-driven development.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Technical Skills</h2>
-    <ul class="list-disc list-inside grid grid-cols-2 gap-1">
-      <li><strong>Languages:</strong> Python, Shell Scripting</li>
+  <section class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, Shell Scripting</li>
       <li><strong>Frameworks:</strong> Flask, Node.js, React.js</li>
-      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
       <li><strong>Databases:</strong> MS SQL Server, MongoDB, Memcached</li>
-      <li><strong>DevOps:</strong> Docker, Jenkins, Linux, AWS (EC2, IAM)</li>
-      <li><strong>Messaging:</strong> RabbitMQ</li>
-      <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
-      <li><strong>ML Tools:</strong> NumPy, Pandas, Matplotlib, Seaborn</li>
+      <li><strong>DevOps & Tools:</strong> Docker, Jenkins, Linux, AWS (EC2, IAM)</li>
+      <li><strong>Data & ML:</strong> NumPy, Pandas, Matplotlib, EDA, Supervised Learning</li>
+      <li><strong>Testing:</strong> Postman, PyTest</li>
     </ul>
   </section>
 
-  <!-- Experience -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Experience</h2>
-    <div>
-      <h3 class="text-lg font-semibold">Software Developer</h3>
-      <p class="text-sm text-gray-500">Zeomega Infotech Pvt Ltd — Bengaluru, India (Nov 2022 - Present)</p>
-      <ul class="list-disc list-inside mt-2">
-        <li>Built RESTful APIs using Python and SQLAlchemy.</li>
-        <li>Created unit tests with good coverage and improved test stability.</li>
-        <li>Optimized DB queries for better performance and efficiency.</li>
-        <li>Migrated legacy logging services into microservices architecture.</li>
-        <li>Worked on SOA-based Identification & Reporting module.</li>
-        <li>Implemented Memcached for improved response times.</li>
-      </ul>
-    </div>
+  <section class="experience">
+    <h2>Experience</h2>
+    <h3>Software Developer - Zeomega Infotech Pvt Ltd</h3>
+    <p><em>Bengaluru, India | Nov 2022 - Present</em></p>
+    <ul>
+      <li>Built RESTful APIs using Python and SQLAlchemy</li>
+      <li>Created unit tests to enhance code reliability</li>
+      <li>Optimized DB queries for better performance</li>
+      <li>Refactored legacy code for modularity</li>
+      <li>Contributed to SOA-based Identification & Reporting module</li>
+      <li>Implemented caching using Memcached</li>
+    </ul>
   </section>
 
-  <!-- Projects -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Projects</h2>
-    <div class="mb-4">
-      <h3 class="font-semibold">🎵 Cohort of Songs (K-Means Clustering)</h3>
-      <p class="text-sm text-gray-500">Python, Pandas, Matplotlib | <a href="https://colab.research.google.com/drive/1gfelIEeq8e7DPcz8Pr4PDh6tYk24Z9PI" target="_blank" class="text-blue-600 underline">View Project</a></p>
-      <ul class="list-disc list-inside mt-1">
-        <li>Performed EDA on music data to analyze audio features.</li>
-        <li>Used Elbow Method and K-Means to group songs into clusters.</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="font-semibold">📋 Task Tracker (Full Stack App)</h3>
-      <p class="text-sm text-gray-500">React, Flask, MongoDB | <a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank" class="text-blue-600 underline">Live Demo</a> | <a href="https://github.com/Aditya-1998k/task-tracker-backend" target="_blank" class="text-blue-600 underline">GitHub</a></p>
-      <ul class="list-disc list-inside mt-1">
-        <li>Built Flask-based REST API and React frontend for task management.</li>
-        <li>Integrated JWT authentication and bcrypt for secure login.</li>
-        <li>Hosted live using Vercel and MongoDB Atlas.</li>
-      </ul>
-    </div>
+  <section class="projects">
+    <h2>Projects</h2>
+    <h3><a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank">Task Tracker</a></h3>
+    <p>Full-stack project using Flask (backend), React.js (frontend), and MongoDB. Features include secure login with JWT and password hashing with Bcrypt.</p>
+
+    <h3><a href="https://colab.research.google.com/drive/1gfelIEeq8e7DPcz8Pr4PDh6tYk24Z9PI" target="_blank">Cohort of Songs</a></h3>
+    <p>Used K-Means clustering to group songs based on audio features. Performed EDA and built visualizations using Pandas and Matplotlib.</p>
   </section>
 
-  <!-- Education -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Education</h2>
-    <p><strong>B.Tech in Electrical Engineering</strong><br/>
-    Galgotia College of Engineering and Technology, Greater Noida<br/>
+  <section class="education">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Electrical Engineering</strong><br>
+    Galgotia College of Engineering and Technology<br>
     Aug 2016 – May 2020</p>
   </section>
 
-  <!-- Certifications -->
-  <section class="mb-8">
-    <h2 class="text-xl font-bold border-b pb-1 mb-2">Certifications</h2>
-    <ul class="list-disc list-inside">
-      <li><strong>Machine Learning with Python</strong> – Simplilearn</li>
-    </ul>
+  <section class="certification">
+    <h2>Certification</h2>
+    <p>Machine Learning with Python - Simplilearn</p>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm text-gray-400 mt-12">
-    © 2025 Aditya Gupta. Built with 💻 and ☕
+  <section class="fun-fact">
+    <h2>⚡ Fun Fact</h2>
+    <p id="funText"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aditya Gupta</p>
   </footer>
 
-  <!-- Typing animation -->
   <script>
-    const funfacts = [
+    const funFacts = [
       "Code, Test, Break, Repeat!",
       "Coffee + Code = Productivity! ☕",
       "First I write the bug... then I fix it 🐛",
-      "Powered by Python & Flask 🐍",
-      "Reacting to Bugs in Real Time ⚛️"
     ];
     let i = 0;
-    const el = document.getElementById("funfact");
-    function typeNext() {
-      el.textContent = funfacts[i];
-      i = (i + 1) % funfacts.length;
+    const el = document.getElementById("funText");
+    function typeFunFact() {
+      el.innerText = funFacts[i];
+      i = (i + 1) % funFacts.length;
+      setTimeout(typeFunFact, 3000);
     }
-    typeNext();
-    setInterval(typeNext, 3000);
+    typeFunFact();
   </script>
-
 </body>
 </html>
