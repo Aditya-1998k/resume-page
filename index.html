@@ -5,127 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aditya Gupta | Resume</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header class="header">
-    <h1>Aditya Gupta</h1>
-    <p>
-      <a href="mailto:aditya98gupta@gmail.com">aditya98gupta@gmail.com</a> |
-      <a href="tel:+919643652605">+91-96436-52605</a> |
-      <a href="https://linkedin.com/in/aditya-gupta1998" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/Aditya-1998k" target="_blank">GitHub</a>
-    </p>
+    <div class="container">
+      <h1>Aditya Gupta</h1>
+      <p class="contact-info">
+        <a href="mailto:aditya98gupta@gmail.com">aditya98gupta@gmail.com</a> | 
+        <a href="tel:+919643652605">+91-96436-52605</a> | 
+        <a href="https://linkedin.com/in/aditya-gupta1998" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/Aditya-1998k" target="_blank">GitHub</a>
+      </p>
+    </div>
   </header>
 
   <section class="summary">
-    <h2>Summary</h2>
-    <p>Results-driven Software Developer with 2+ years of experience building backend systems, REST APIs, and working with Python, Flask, SQL, and DevOps. Skilled in microservices, database optimization, and frontend tech (React.js). Passionate about Machine Learning and scalable applications.</p>
+    <div class="container">
+      <h2>Summary</h2>
+      <p>Results-driven Software Developer with 2+ years of experience in backend systems, REST APIs, and full-stack development. Passionate about Machine Learning, building scalable systems, and contributing to open-source projects. Strong in Python, Flask, React.js, and DevOps tools like Docker and AWS.</p>
+    </div>
   </section>
 
   <section class="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, JavaScript, Shell Scripting</li>
-      <li><strong>Frameworks:</strong> Flask, Node.js, React.js</li>
-      <li><strong>Databases:</strong> MS SQL Server, MongoDB, Memcached</li>
-      <li><strong>DevOps & Tools:</strong> Docker, Jenkins, Linux, AWS (EC2, IAM)</li>
-      <li><strong>Data & ML:</strong> NumPy, Pandas, Matplotlib, EDA, Supervised Learning</li>
-      <li><strong>Testing:</strong> Postman, PyTest</li>
-    </ul>
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>Languages</h3>
+          <p>Python, JavaScript, Shell Scripting</p>
+        </div>
+        <div class="skill">
+          <h3>Frameworks</h3>
+          <p>Flask, Node.js, React.js</p>
+        </div>
+        <div class="skill">
+          <h3>Databases</h3>
+          <p>MS SQL Server, MongoDB, PostgreSQL</p>
+        </div>
+        <div class="skill">
+          <h3>DevOps & Tools</h3>
+          <p>Docker, Jenkins, Linux, AWS (EC2, IAM), Kubernetes</p>
+        </div>
+        <div class="skill">
+          <h3>Data & ML</h3>
+          <p>NumPy, Pandas, Matplotlib, scikit-learn</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="experience">
-    <h2>Experience</h2>
-    <h3>Software Developer - Zeomega Infotech Pvt Ltd</h3>
-    <p><em>Bengaluru, India | Nov 2022 - Present</em></p>
-    <ul>
-      <li>Designed and developed RESTful APIs using Python and Flask, integrated with PostgreSQL and MongoDB for efficient data handling.</li>
-      <li>Enhanced application performance by optimizing SQL queries, reducing the average response time by 30%.</li>
-      <li>Implemented unit tests with PyTest, ensuring over 60% coverage, reducing bugs and improving code reliability.</li>
-      <li>Developed a secure and scalable microservice architecture, improving deployment times and scalability.</li>
-      <li>Worked closely with the DevOps team to integrate Docker containers for seamless deployment and orchestration using Jenkins and AWS services (EC2, S3, IAM).</li>
-      <li>Contributed to building a new SOA-based Identification & Reporting module, enabling more accurate data insights.</li>
-      <li>Implemented caching mechanisms using Memcached to reduce API latency by 40%.</li>
-      <li>Worked with cross-functional teams to troubleshoot complex issues and deliver features as part of Agile sprints.</li>
-    </ul>
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Software Developer</h3>
+        <p><em>Zeomega Infotech Pvt Ltd, Bengaluru, India</em></p>
+        <p><em>Nov 2022 - Present</em></p>
+        <ul>
+          <li>Designed and developed RESTful APIs with Python and Flask, integrated with PostgreSQL and MongoDB.</li>
+          <li>Improved application performance by optimizing SQL queries, reducing response time by 30%.</li>
+          <li>Implemented caching mechanisms using Memcached to reduce latency by 40%.</li>
+          <li>Collaborated with DevOps to set up continuous integration and delivery pipelines using Jenkins and Docker.</li>
+          <li>Worked with the team to refactor legacy code, making it modular and easier to maintain.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="projects">
-    <h2>Projects</h2>
-    <h3><a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank">Task Tracker</a></h3>
-    <p>
-      Full-stack project that helps users manage tasks and track their progress. The application consists of a Flask-based backend with MongoDB for data storage and a React.js frontend. 
-      Features include:
-    </p>
-    <ul>
-      <li>JWT-based authentication for secure user login and registration</li>
-      <li>API endpoints for managing tasks, including creating, updating, and deleting tasks</li>
-      <li>Real-time updates and notifications using WebSockets</li>
-      <li>Responsive user interface built with React.js and styled-components</li>
-      <li>Deployed on Vercel with CI/CD pipelines integrated via GitHub and Jenkins</li>
-    </ul>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3><a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank">Task Tracker</a></h3>
+        <p>A full-stack task management application with React.js (frontend), Flask (backend), and MongoDB (database). Features JWT authentication, real-time task updates via WebSockets, and a responsive UI.</p>
+        <ul>
+          <li>Deployed on Vercel with CI/CD pipelines integrated through GitHub Actions and Jenkins.</li>
+          <li>Real-time notifications and task updates with WebSocket integration.</li>
+          <li>CRUD operations for task management and data persistence with MongoDB.</li>
+        </ul>
+      </div>
 
-    <h3><a href="https://colab.research.google.com/drive/1gfelIEeq8e7DPcz8Pr4PDh6tYk24Z9PI" target="_blank">Cohort of Songs - K-Means Clustering</a></h3>
-    <p>
-      A data science project in which I used K-Means clustering to group songs based on their audio features. The project involves several steps:
-    </p>
-    <ul>
-      <li>Performed Exploratory Data Analysis (EDA) using Pandas and Matplotlib to identify trends in the audio data.</li>
-      <li>Applied K-Means clustering algorithm to categorize songs into distinct groups.</li>
-      <li>Created visualizations to present the clustering results and the relationship between different audio features.</li>
-      <li>Used Jupyter notebooks and Google Colab for development and sharing of results.</li>
-    </ul>
-
-    <h3><a href="https://github.com/Aditya-1998k/house-price-prediction-flask" target="_blank">House Price Prediction</a></h3>
-    <p>
-      A machine learning project that predicts house prices based on various input features such as area, location, and number of rooms. 
-      Key features include:
-    </p>
-    <ul>
-      <li>Developed a Flask-based REST API for accepting user inputs and predicting house prices</li>
-      <li>Built a regression model using scikit-learn and trained it with a dataset containing real estate data</li>
-      <li>Integrated the model into the Flask API and deployed it on AWS EC2</li>
-      <li>Created a simple HTML frontend to interact with the API and display predicted prices</li>
-    </ul>
+      <div class="project">
+        <h3><a href="https://github.com/Aditya-1998k/house-price-prediction-flask" target="_blank">House Price Prediction</a></h3>
+        <p>Machine learning project that predicts house prices based on area, number of rooms, and other features. Built with Flask for the API and scikit-learn for the regression model.</p>
+        <ul>
+          <li>Developed a Flask-based API for predicting house prices using a trained regression model.</li>
+          <li>Deployed the API on AWS EC2 and integrated with a simple HTML frontend.</li>
+          <li>Utilized scikit-learn for data processing and model training.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="education">
-    <h2>Education</h2>
-    <p><strong>B.Tech in Electrical Engineering</strong><br>
-    Galgotia College of Engineering and Technology<br>
-    Aug 2016 – May 2020</p>
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>B.Tech in Electrical Engineering</strong><br>Galgotia College of Engineering and Technology, Aug 2016 – May 2020</p>
+    </div>
   </section>
 
   <section class="certification">
-    <h2>Certification</h2>
-    <p>Machine Learning with Python - Simplilearn</p>
-  </section>
-
-  <section class="fun-fact">
-    <h2>⚡ Fun Fact</h2>
-    <p id="funText"></p>
+    <div class="container">
+      <h2>Certification</h2>
+      <p>Machine Learning with Python - Simplilearn</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Aditya Gupta</p>
+    <div class="container">
+      <p>© 2025 Aditya Gupta</p>
+    </div>
   </footer>
 
-  <script>
-    const funFacts = [
-      "Code, Test, Break, Repeat!",
-      "Coffee + Code = Productivity! ☕",
-      "First I write the bug... then I fix it 🐛",
-    ];
-    let i = 0;
-    const el = document.getElementById("funText");
-    function typeFunFact() {
-      el.innerText = funFacts[i];
-      i = (i + 1) % funFacts.length;
-      setTimeout(typeFunFact, 3000);
-    }
-    typeFunFact();
-  </script>
 </body>
 </html>
