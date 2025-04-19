@@ -4,94 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aditya Gupta | Resume</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding-top: 2rem;
-      background: #f9f9f9;
-    }
-    h2 {
-      color: #343a40;
-      margin-top: 2rem;
-    }
-    .section-title {
-      border-bottom: 2px solid #007bff;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 1rem;
-    }
-    .fun-fact {
-      font-size: 1.1rem;
-      font-style: italic;
-      color: #6c757d;
-      margin-top: 1.5rem;
+      font-family: 'Fira Code', monospace;
     }
   </style>
 </head>
-<body>
-<div class="container">
-  <div class="text-center">
-    <h1><strong>Aditya Gupta</strong></h1>
-    <p>
+<body class="bg-gray-50 text-gray-800 p-6">
+
+  <!-- Header -->
+  <header class="text-center mb-10">
+    <h1 class="text-4xl font-bold text-gray-900">Aditya Gupta</h1>
+    <p class="mt-2 text-md text-gray-600">Software Developer | Backend Engineer | ML Enthusiast</p>
+    <div class="mt-3 space-x-4 text-sm text-blue-600">
       <a href="mailto:aditya98gupta@gmail.com">aditya98gupta@gmail.com</a> |
       <a href="tel:+919643652605">+91-96436-52605</a> |
       <a href="https://linkedin.com/in/aditya-gupta1998" target="_blank">LinkedIn</a> |
       <a href="https://github.com/Aditya-1998k" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- Fun Fact Typing Animation -->
+  <section class="text-center mb-10">
+    <span class="text-xl font-semibold text-purple-700">⚡ Fun Fact:</span>
+    <h2 class="text-lg mt-2 h-10" id="funfact"></h2>
+  </section>
+
+  <!-- Summary -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Summary</h2>
+    <p>
+      Results-driven Software Developer with 2+ years of experience building scalable backend systems and RESTful APIs. 
+      Proficient in Python, Flask, SQL, and DevOps tools (Docker, Jenkins). Skilled in microservices, database optimization, 
+      testing, and frontend technologies. Passionate about Machine Learning and data-driven development.
     </p>
-  </div>
+  </section>
 
-  <h2 class="section-title">Summary</h2>
-  <p>Results-driven Software Developer with 2+ years of experience in backend systems, REST APIs, and full stack development. Skilled in Python, Flask, SQL, DevOps, and frontend with a passion for ML and data-driven apps.</p>
+  <!-- Skills -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Technical Skills</h2>
+    <ul class="list-disc list-inside grid grid-cols-2 gap-1">
+      <li><strong>Languages:</strong> Python, Shell Scripting</li>
+      <li><strong>Frameworks:</strong> Flask, Node.js, React.js</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Databases:</strong> MS SQL Server, MongoDB, Memcached</li>
+      <li><strong>DevOps:</strong> Docker, Jenkins, Linux, AWS (EC2, IAM)</li>
+      <li><strong>Messaging:</strong> RabbitMQ</li>
+      <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+      <li><strong>ML Tools:</strong> NumPy, Pandas, Matplotlib, Seaborn</li>
+    </ul>
+  </section>
 
-  <h2 class="section-title">Technical Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Python, Shell</li>
-    <li><strong>Frameworks:</strong> Flask, Node.js, React.js</li>
-    <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-    <li><strong>Databases:</strong> SQL Server, MongoDB, Memcached</li>
-    <li><strong>DevOps:</strong> Docker, Jenkins, Linux, AWS (EC2, IAM)</li>
-    <li><strong>Messaging:</strong> RabbitMQ</li>
-    <li><strong>Tools:</strong> Git, GitHub, GitLab, Postman, PyTest</li>
-    <li><strong>ML/DS:</strong> NumPy, Pandas, Matplotlib, Seaborn, EDA</li>
-    <li><strong>System Design:</strong> HLD, LLD, REST API Design</li>
-  </ul>
+  <!-- Experience -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Experience</h2>
+    <div>
+      <h3 class="text-lg font-semibold">Software Developer</h3>
+      <p class="text-sm text-gray-500">Zeomega Infotech Pvt Ltd — Bengaluru, India (Nov 2022 - Present)</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Built RESTful APIs using Python and SQLAlchemy.</li>
+        <li>Created unit tests with good coverage and improved test stability.</li>
+        <li>Optimized DB queries for better performance and efficiency.</li>
+        <li>Migrated legacy logging services into microservices architecture.</li>
+        <li>Worked on SOA-based Identification & Reporting module.</li>
+        <li>Implemented Memcached for improved response times.</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2 class="section-title">Experience</h2>
-  <h5>Software Developer, Zeomega Infotech Pvt Ltd — <em>Nov 2022 - Present</em></h5>
-  <ul>
-    <li>Built RESTful APIs using Python and SQLAlchemy</li>
-    <li>Created unit tests and improved legacy code</li>
-    <li>Optimized DB queries and migrated to microservices</li>
-    <li>Worked on SOA-based Identification & Reporting module</li>
-    <li>Applied caching strategies using Memcached</li>
-  </ul>
+  <!-- Projects -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Projects</h2>
+    <div class="mb-4">
+      <h3 class="font-semibold">🎵 Cohort of Songs (K-Means Clustering)</h3>
+      <p class="text-sm text-gray-500">Python, Pandas, Matplotlib | <a href="https://colab.research.google.com/drive/1gfelIEeq8e7DPcz8Pr4PDh6tYk24Z9PI" target="_blank" class="text-blue-600 underline">View Project</a></p>
+      <ul class="list-disc list-inside mt-1">
+        <li>Performed EDA on music data to analyze audio features.</li>
+        <li>Used Elbow Method and K-Means to group songs into clusters.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-semibold">📋 Task Tracker (Full Stack App)</h3>
+      <p class="text-sm text-gray-500">React, Flask, MongoDB | <a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank" class="text-blue-600 underline">Live Demo</a> | <a href="https://github.com/Aditya-1998k/task-tracker-backend" target="_blank" class="text-blue-600 underline">GitHub</a></p>
+      <ul class="list-disc list-inside mt-1">
+        <li>Built Flask-based REST API and React frontend for task management.</li>
+        <li>Integrated JWT authentication and bcrypt for secure login.</li>
+        <li>Hosted live using Vercel and MongoDB Atlas.</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2 class="section-title">Projects</h2>
-  <p>
-    <strong>Task Tracker (Full Stack Web App):</strong><br/>
-    React + Flask + MongoDB | JWT | Hosted at 
-    <a href="https://task-tracker-frontend-pw5iopguc-adityas-projects-b190d156.vercel.app/#" target="_blank">Live Demo</a><br/>
-    Designed secure task management app with auth, CRUD, and session management.
-  </p>
-  <p>
-    <strong>Cohort of Songs (K-Means Clustering):</strong><br/>
-    Python, Pandas, Matplotlib |
-    <a href="https://colab.research.google.com/drive/1gfelIEeq8e7DPcz8Pr4PDh6tYk24Z9PI" target="_blank">Colab</a><br/>
-    Clustered songs using audio features and K-Means after EDA.
-  </p>
+  <!-- Education -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Education</h2>
+    <p><strong>B.Tech in Electrical Engineering</strong><br/>
+    Galgotia College of Engineering and Technology, Greater Noida<br/>
+    Aug 2016 – May 2020</p>
+  </section>
 
-  <h2 class="section-title">Education</h2>
-  <p><strong>B.Tech in Electrical Engineering</strong> - Galgotia College of Engineering and Technology (2016–2020)</p>
+  <!-- Certifications -->
+  <section class="mb-8">
+    <h2 class="text-xl font-bold border-b pb-1 mb-2">Certifications</h2>
+    <ul class="list-disc list-inside">
+      <li><strong>Machine Learning with Python</strong> – Simplilearn</li>
+    </ul>
+  </section>
 
-  <h2 class="section-title">Certifications</h2>
-  <ul>
-    <li><strong>Machine Learning with Python</strong> – Simplilearn</li>
-  </ul>
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-400 mt-12">
+    © 2025 Aditya Gupta. Built with 💻 and ☕
+  </footer>
 
-  <div class="fun-fact text-center">
-    ⚡ Fun Fact: "Code, Test, Break, Repeat. Coffee fuels my logic! ☕"
-  </div>
-</div>
+  <!-- Typing animation -->
+  <script>
+    const funfacts = [
+      "Code, Test, Break, Repeat!",
+      "Coffee + Code = Productivity! ☕",
+      "First I write the bug... then I fix it 🐛",
+      "Powered by Python & Flask 🐍",
+      "Reacting to Bugs in Real Time ⚛️"
+    ];
+    let i = 0;
+    const el = document.getElementById("funfact");
+    function typeNext() {
+      el.textContent = funfacts[i];
+      i = (i + 1) % funfacts.length;
+    }
+    typeNext();
+    setInterval(typeNext, 3000);
+  </script>
+
 </body>
 </html>
